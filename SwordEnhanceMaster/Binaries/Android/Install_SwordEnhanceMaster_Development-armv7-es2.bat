@@ -15,10 +15,10 @@ for /f "delims=" %%A in ('%ADB% %DEVICE% shell "echo $EXTERNAL_STORAGE"') do @se
 %ADB% %DEVICE% shell rm -r %STORAGE%/UE4Game/SwordEnhanceMaster
 %ADB% %DEVICE% shell rm -r %STORAGE%/UE4Game/UE4CommandLine.txt
 %ADB% %DEVICE% shell rm -r %STORAGE%/obb/com.YourCompany.SwordEnhanceMaster
-@echo.
-@echo Installing new data. Failures here indicate storage problems (missing SD card or bad permissions) and are fatal.
-%ADB% %DEVICE% push main.1.com.YourCompany.SwordEnhanceMaster.obb %STORAGE%/obb/com.YourCompany.SwordEnhanceMaster/main.1.com.YourCompany.SwordEnhanceMaster.obb
-if "%ERRORLEVEL%" NEQ "0" goto Error
+
+
+
+
 @echo.
 @echo Installation successful
 goto:eof
